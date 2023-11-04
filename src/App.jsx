@@ -70,6 +70,7 @@ function App() {
   const [isNavVisible, setIsNavVisible] = useState(false);
   const toggleNav = () => setIsNavVisible(!isNavVisible);
   const closeNav = () => setIsNavVisible(false);
+
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
