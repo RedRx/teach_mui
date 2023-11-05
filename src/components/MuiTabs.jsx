@@ -11,7 +11,15 @@ const MuiTabs = () => {
   };
 
   return (
-    <Box width={500}>
+    <Box
+      width={500}
+      style={{
+        backgroundColor: "#eee",
+        padding: "2rem",
+        borderRadius: "15px",
+        color: "black",
+      }}
+    >
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <TabList aria-label="tab example" onChange={handleChange}>
