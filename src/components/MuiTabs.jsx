@@ -6,20 +6,12 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 const MuiTabs = () => {
   const [value, setValue] = useState("1");
 
-  const handleChange = (newValue) => {
+  const handleChange = (_, newValue) => {
     setValue(newValue);
   };
 
   return (
-    <Box
-      width={500}
-      style={{
-        backgroundColor: "#eee",
-        padding: "2rem",
-        borderRadius: "15px",
-        color: "black",
-      }}
-    >
+    <Box width={500}>
       <TabContext value={value}>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <TabList aria-label="tab example" onChange={handleChange}>
